@@ -1,7 +1,12 @@
+import Nav from '../nav/Nav';
 import './header.css';
 
 function Header() {
-	return <header className='header'>This is the header</header>;
+	return (
+		<header className='header'>
+			<Nav />
+		</header>
+	);
 }
 
 export default Header;

@@ -1,0 +1,51 @@
+.nav {
+	border-bottom: 1.7px solid var(--variant-color);
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+
+.nav_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.logo_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	color: var(--white-color);
+}
+
+.nav_items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.nav_items li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--white-color);
+	cursor: pointer;
+}
+
+.nav_items li:hover {
+	opacity: 0.7;
+}
+
+.nav_container input {
+	background: var(--variant-color-3);
+	padding: 1rem 2rem 1rem 1rem;
+	color: var(--white-color);
+}
+
+.nav_container input::placeholder {
+	color: var(--placeholder-color);
+}

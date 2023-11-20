@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	border: none;
+	outline: none;
 	list-style: none;
 	text-decoration: none;
 	box-sizing: border-box;
@@ -19,4 +20,36 @@
 
 	--variant-color: #003162;
 	--variant-color-2: #002953;
+	--variant-color-3: #00264d;
+
+	--container-width-lg: 90%;
+	--container-width-sm: 80%;
+
+	--transition: all 500ms ease;
+}
+
+body {
+	background-color: var(--primary-color);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.btn {
+	padding: 0.7rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	background-color: var(--secondary-color);
+	border: 1px solid transparent;
+	color: var(--white-color);
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.btn:hover {
+	background-color: transparent;
+	border: 1px solid var(--secondary-color);
 }
