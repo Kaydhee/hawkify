@@ -1,0 +1,89 @@
+.main {
+	width: 80%;
+	height: 91%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin: 1% auto;
+	color: var(--white-color);
+}
+
+.main_left {
+	flex-basis: 45%;
+}
+
+.main_left h1 {
+	font-size: 3.125rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.main_left p {
+	font-size: 1.125rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.ctas {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+/* .create_btn {
+	background: ;
+} */
+
+.stats {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+
+.stats h3 {
+	font-size: 2.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.stats span {
+	font-size: 0.75rem;
+	margin-top: -0.5rem;
+}
+
+/* MAIN RIGHT */
+.main_right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 55%;
+}
+
+.img_box {
+	padding: 1rem;
+	/* background-color: red; */
+}
+
+.first_box {
+	margin-right: -12rem;
+}
+
+.second_box {
+	margin-top: -4rem;
+}
+
+.third_box {
+	margin-left: -12rem;
+	z-index: -1;
+}
