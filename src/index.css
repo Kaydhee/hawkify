@@ -47,6 +47,7 @@ html {
 	color: var(--white-color);
 	cursor: pointer;
 	transition: var(--transition);
+	font-size: 1rem;
 }
 
 .btn:hover {

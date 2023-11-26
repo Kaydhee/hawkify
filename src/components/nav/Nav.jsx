@@ -30,45 +30,14 @@ function Nav() {
 					<h2>Hawkify</h2>
 				</div>
 
-				<input
-					type='text'
-					placeholder='search collection, address or account'
-				/>
-				<IoMdSearch className='nav_icon search' />
-
-				<ul className='nav_items'>
-					<li>
-						explore <MdArrowDropDown />
-					</li>
-					<li>
-						create <MdArrowDropDown />
-					</li>
-					<li>
-						community <MdArrowDropDown />
-					</li>
-				</ul>
-
-				<Button className='btn nav_btn'>
-					<img
-						src={balance}
-						alt='icon'
+				<div className='nav_contents'>
+					<input
+						type='text'
+						placeholder='search collection, address or account'
 					/>
-					<span>connect wallet</span>
-				</Button>
+					<IoMdSearch className='nav_icon search' />
 
-				<button
-					className='toggle_btn'
-					onClick={handleShowMenu}>
-					{isExpanded ? (
-						<IoMdClose className='nav_icon close' />
-					) : (
-						<HiOutlineMenuAlt1 className='nav_icon open' />
-					)}
-				</button>
-
-				{/* Mobile nav */}
-				{showMenu && (
-					<ul className='mobile_nav'>
+					<ul className='nav_items'>
 						<li>
 							explore <MdArrowDropDown />
 						</li>
@@ -79,6 +48,45 @@ function Nav() {
 							community <MdArrowDropDown />
 						</li>
 					</ul>
+				</div>
+
+				<div className='nav_btns'>
+					<Button className='btn nav_btn'>
+						<img
+							src={balance}
+							alt='icon'
+						/>
+						<span>connect wallet</span>
+					</Button>
+
+					<button
+						className='toggle_btn'
+						onClick={handleShowMenu}>
+						{isExpanded ? (
+							<IoMdClose className='nav_icon close' />
+						) : (
+							<HiOutlineMenuAlt1 className='nav_icon open' />
+						)}
+					</button>
+				</div>
+
+				{/* Mobile nav */}
+				{showMenu && (
+					<>
+						<ul className='mobile_nav'>
+							<li>
+								explore <MdArrowDropDown />
+							</li>
+							<li>
+								create <MdArrowDropDown />
+							</li>
+							<li>
+								community <MdArrowDropDown />
+							</li>
+						</ul>
+
+						<div className='overlay'></div>
+					</>
 				)}
 				{/* End of Mobile nav */}
 			</div>

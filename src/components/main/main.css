@@ -12,6 +12,7 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+	height: 100%;
 	margin: 1% auto;
 	color: var(--white-color);
 }
@@ -40,9 +41,10 @@
 	margin-bottom: 1rem;
 }
 
-/* .create_btn {
-	background: ;
-} */
+.ctas .create_btn {
+	border: 1px solid var(--secondary-color);
+	background-color: transparent;
+}
 
 .stats {
 	display: flex;
@@ -68,22 +70,108 @@
 	align-items: center;
 	justify-content: center;
 	flex-basis: 55%;
+	height: 45vh;
 }
 
 .img_box {
+	position: relative;
+	/* height: 63.5%; */
+}
+
+.img_bg {
+	position: absolute;
+	width: 13.0625rem;
+	height: 100%;
+	background-color: #ffffffcb;
+	filter: blur(3px);
+}
+
+.img_box img {
+	height: 13.0625rem;
+	width: 13.0625rem;
+	position: relative;
 	padding: 1rem;
-	/* background-color: red; */
 }
 
 .first_box {
-	margin-right: -12rem;
+	margin-right: -7rem;
+	transform: rotate(-15deg);
+	z-index: -1;
 }
 
 .second_box {
-	margin-top: -4rem;
+	margin-top: -4.5rem;
 }
 
 .third_box {
-	margin-left: -12rem;
+	margin-left: -7rem;
 	z-index: -1;
+	transform: rotate(15deg);
+}
+
+/* Resonsiveness (Tablets) */
+@media (max-width: 1024px) {
+	.main_container {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	/* Main right */
+	.main_right {
+		flex-basis: 50%;
+		width: 100%;
+	}
+}
+
+/* Resonsiveness (Phones) */
+@media (max-width: 524px) {
+	.main {
+		width: 85%;
+	}
+
+	.main_left {
+		width: 100%;
+	}
+
+	.main_left h1 {
+		font-size: 1.875rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.main_left p {
+		font-size: 0.75rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.ctas {
+		width: 95.5%;
+		justify-content: space-between;
+		margin-bottom: 1.5rem;
+	}
+
+	.stats {
+		gap: 1.95rem;
+	}
+
+	/* Main Right */
+	.main_right {
+		margin-top: -10%;
+	}
+
+	.img_bg {
+		width: 9.089375rem;
+	}
+
+	.img_box img {
+		height: 9.089375rem;
+		width: 9.089375rem;
+	}
+
+	.first_box {
+		margin-right: -4rem;
+	}
+
+	.third_box {
+		margin-left: -4rem;
+	}
 }

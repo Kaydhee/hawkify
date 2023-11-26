@@ -25,6 +25,19 @@
 	color: var(--white-color);
 }
 
+.nav_contents {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.nav_btns {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .nav_items {
 	display: flex;
 	align-items: center;
@@ -74,6 +87,14 @@
 }
 /* Resonsiveness (Phones) */
 @media (max-width: 524px) {
+	.logo_box h2 {
+		font-size: 1rem;
+	}
+
+	.logo_box img {
+		width: 2rem;
+	}
+
 	.nav_icon {
 		display: block;
 		color: var(--white-color);
@@ -89,11 +110,8 @@
 		background-color: transparent;
 		color: var(--white-color);
 		cursor: pointer;
+		z-index: 2;
 	}
-
-	/* .toggle_btn:hover {
-		border: none;
-	} */
 
 	.nav_container input {
 		display: none;
@@ -101,6 +119,10 @@
 
 	.nav_items {
 		display: none;
+	}
+
+	.nav_contents {
+		margin-right: -4rem;
 	}
 
 	.mobile_nav {
@@ -118,6 +140,11 @@
 		width: 70%;
 		z-index: 2;
 		transition: var(--transition);
+
+		animation: mobAnimation 1s ease forwards;
+		transform: rotateY(90deg) rotateX(90deg);
+		transform-origin: top right;
+		opacity: 0;
 	}
 
 	.mobile_nav li {
@@ -130,5 +157,23 @@
 
 	.mobile_nav li:hover {
 		opacity: 0.7;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+		backdrop-filter: blur(3px);
+		z-index: 1;
+	}
+}
+
+@keyframes mobAnimation {
+	to {
+		transform: rotate(0);
+		opacity: 1;
 	}
 }

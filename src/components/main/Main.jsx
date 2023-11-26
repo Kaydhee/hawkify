@@ -1,10 +1,10 @@
 import './main.css';
 
-import Button from '../../common components/button/Button';
+// import Button from '../../common components/button/Button';
 
-import spaceWarlock from '../../assets/spaceWarlock.png';
-import coraltribe from '../../assets/coraltribe.png';
-import bakedberserk from '../../assets/bakedberserk.png';
+import spaceWarlock from '../../assets/warlock.png';
+import coraltribe from '../../assets/coral.png';
+import bakedberserk from '../../assets/bakedberserkk.png';
 
 function Main() {
 	return (
@@ -20,8 +20,10 @@ function Main() {
 					</p>
 
 					<div className='ctas'>
-						<Button>explore marketplace</Button>
-						<Button className='create_btn'>create</Button>
+						<button className='btn'>explore marketplace</button>
+						{/* <Button></Button> */}
+						<button className='btn create_btn'>create</button>
+						{/* <Button className='create_btn'></Button> */}
 					</div>
 
 					<div className='stats'>
@@ -37,8 +39,9 @@ function Main() {
 					</div>
 				</div>
 
-				<div className='main_right'>
+				<section className='main_right'>
 					<div className='img_box first_box'>
+						<div className='img_bg'></div>
 						<img
 							src={coraltribe}
 							alt='coraltribe'
@@ -46,6 +49,7 @@ function Main() {
 					</div>
 
 					<div className='img_box second_box'>
+						<div className='img_bg'></div>
 						<img
 							src={spaceWarlock}
 							alt='spaceWarlock'
@@ -53,12 +57,13 @@ function Main() {
 					</div>
 
 					<div className='img_box third_box'>
+						<div className='img_bg'></div>
 						<img
 							src={bakedberserk}
 							alt='bakedberserk'
 						/>
 					</div>
-				</div>
+				</section>
 			</section>
 		</main>
 	);
