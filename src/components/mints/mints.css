@@ -1,0 +1,141 @@
+.mints {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.mints_container {
+	width: 100%;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	flex-direction: column;
+	color: var(--white-color);
+}
+
+.mints_box {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.mints_card {
+	display: flex;
+	align-items: start;
+	margin-bottom: 1rem;
+	border-right: 1px solid var(--placeholder-color);
+	gap: 3.5rem;
+	padding: 1rem;
+	padding-left: 0;
+}
+
+.mints_card:nth-child(2) {
+	padding: 1rem 2.05rem 1rem 0;
+}
+
+.mints_card:nth-child(2) img {
+	margin-left: -0.88rem;
+}
+
+.mints_card:nth-child(4) {
+	padding: 1rem 2.15rem 1rem 0;
+}
+
+.mints_card:nth-child(5) {
+	margin-left: -1.15rem;
+	padding-right: 1.45rem;
+}
+
+.mints_card:nth-child(6) {
+	padding: 1rem 2.2rem 1rem 0;
+}
+
+.mints_card img {
+	width: 5rem;
+}
+
+.mints_info {
+	display: flex;
+	flex-direction: column;
+}
+
+.mints_info h3 {
+	display: flex;
+	align-items: start;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.mints_info span {
+	color: var(--secondary-color);
+}
+
+.price_action {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mints_info .price_action h5 {
+	font-size: 0.675rem;
+}
+
+.mints_info .price_action h5 span {
+	font-size: 0.8rem;
+}
+
+.mints_info .arrow {
+	margin-top: 0.5rem;
+}
+
+/* Responsive (Tablets) */
+@media (max-width: 1024px) {
+	.mints_card:nth-child(2) {
+		padding: 1rem 1.05rem 1rem 0;
+	}
+
+	.mints_card:nth-child(3) {
+		padding-right: 0.56rem;
+	}
+
+	.mints_card:nth-child(4) {
+		padding: 1rem 0.56rem 1rem 0;
+	}
+
+	.mints_card:nth-child(5) {
+		margin-left: 0rem;
+		padding-right: 2.7rem;
+	}
+
+	.mints_card:nth-child(6) {
+		padding: 1rem 0.56rem 1rem 0;
+	}
+}
+
+/* Responsive (Phones) */
+@media (max-width: 524px) {
+	.mints_info {
+		width: 100%;
+	}
+
+	.mints_card:nth-child(2) img {
+		margin-left: 0rem;
+	}
+
+	.mints_card:nth-child(2),
+	.mints_card:nth-child(3),
+	.mints_card:nth-child(4),
+	.mints_card:nth-child(5),
+	.mints_card:nth-child(6) {
+		padding: 1rem 1rem 1rem 0;
+	}
+
+	.mints_card {
+		border-right: 0;
+		gap: 2rem;
+		width: 100%;
+		margin: 0;
+		border-bottom: 1px solid var(--placeholder-color);
+	}
+}

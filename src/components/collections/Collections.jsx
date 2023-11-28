@@ -78,7 +78,7 @@ function Collections() {
 	return (
 		<section className='collections'>
 			<section className='collections_container'>
-				<section className='collections_heading'>
+				<section className='collections_heading heading'>
 					<h2>trending collections</h2>
 					<p>
 						see what’s trending in the market based on floor price, volume, etc.
