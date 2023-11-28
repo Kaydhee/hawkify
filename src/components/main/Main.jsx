@@ -10,7 +10,7 @@ function Main() {
 	return (
 		<main className='main'>
 			<section className='main_container'>
-				<div className='main_left'>
+				<section className='main_left'>
 					<h1>nft market tools for degens, by degens</h1>
 
 					<p>
@@ -20,7 +20,7 @@ function Main() {
 					</p>
 
 					<div className='ctas'>
-						<button className='btn'>explore marketplace</button>
+						<button className='btn explore_btn'>explore marketplace</button>
 						{/* <Button></Button> */}
 						<button className='btn create_btn'>create</button>
 						{/* <Button className='create_btn'></Button> */}
@@ -37,7 +37,7 @@ function Main() {
 							1M+ <span>art sales</span>
 						</h3>
 					</div>
-				</div>
+				</section>
 
 				<section className='main_right'>
 					<div className='img_box first_box'>

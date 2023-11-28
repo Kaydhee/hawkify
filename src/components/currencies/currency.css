@@ -1,0 +1,40 @@
+.currencies {
+	width: 100%;
+	background-color: var(--white-color);
+}
+
+.currencies_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	gap: 2rem;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+
+.currencies_container img {
+	width: 11.5rem;
+}
+
+/* Resonsiveness (Tablets) */
+@media (max-width: 1024px) {
+	.currencies_container img {
+		width: 5.5rem;
+	}
+}
+
+/* Resonsiveness (Pones) */
+@media (max-width: 524px) {
+	.currencies {
+		margin-top: -7%;
+	}
+
+	.currencies_container {
+		flex-wrap: wrap;
+	}
+
+	.currencies_container img {
+		width: 4.2rem;
+	}
+}

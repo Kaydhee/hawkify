@@ -1,6 +1,6 @@
 .main {
 	width: 80%;
-	height: 91%;
+	height: 80%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -75,7 +75,6 @@
 
 .img_box {
 	position: relative;
-	/* height: 63.5%; */
 }
 
 .img_bg {
@@ -149,15 +148,15 @@
 		margin-bottom: 1.5rem;
 	}
 
+	.ctas .explore_btn {
+		font-size: 0.8rem;
+	}
+
 	.stats {
 		gap: 1.95rem;
 	}
 
 	/* Main Right */
-	.main_right {
-		margin-top: -10%;
-	}
-
 	.img_bg {
 		width: 9.089375rem;
 	}
