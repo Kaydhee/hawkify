@@ -121,8 +121,10 @@ function Collections() {
 								</div>
 
 								<div className='title'>
-									<h3>{title}</h3>
-									<MdVerified className='verified' />
+									<h3>
+										{title}
+										<MdVerified className='verified' />
+									</h3>
 								</div>
 
 								<div className='price_action'>
