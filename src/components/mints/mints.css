@@ -119,6 +119,14 @@
 		width: 100%;
 	}
 
+	.mints_heading h2 {
+		font-size: 1.5rem;
+	}
+
+	.mints_heading p {
+		font-size: 0.7rem;
+	}
+
 	.mints_card:nth-child(2) img {
 		margin-left: 0rem;
 	}

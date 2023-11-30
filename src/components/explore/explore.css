@@ -9,7 +9,7 @@
 	position: relative;
 }
 
-.collections_heading {
+.explore_heading {
 	border-bottom: 1px solid var(--secondary-color);
 }
 
@@ -89,7 +89,31 @@
 
 /* Responsive (Phones) */
 @media (max-width: 524px) {
-	.collections_heading {
+	.explore_heading {
 		margin-bottom: 2rem;
+	}
+
+	.explore_heading h2 {
+		font-size: 1.5rem;
+	}
+
+	.explore_heading p {
+		font-size: 0.7rem;
+	}
+
+	.explore_box {
+		align-items: center;
+		justify-content: center;
+		margin-top: 4%;
+	}
+
+	.explore_inner-bg {
+		width: 16.9375rem;
+		height: 18.1875rem;
+	}
+
+	.explore_inner {
+		width: 16.9375rem;
+		height: 18.1875rem;
 	}
 }

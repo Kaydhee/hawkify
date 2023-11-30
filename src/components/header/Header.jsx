@@ -1,6 +1,7 @@
 import Collections from '../collections/Collections';
 import Currency from '../currencies/Currency';
 import Explore from '../explore/Explore';
+import Footer from '../footer/Footer';
 import Main from '../main/Main';
 import Mints from '../mints/Mints';
 import Nav from '../nav/Nav';
@@ -15,6 +16,7 @@ function Header() {
 			<Collections />
 			<Mints />
 			<Explore />
+			<Footer />
 		</header>
 	);
 }

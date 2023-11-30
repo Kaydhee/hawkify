@@ -85,6 +85,7 @@
 		display: none;
 	}
 }
+
 /* Resonsiveness (Phones) */
 @media (max-width: 524px) {
 	.logo_box h2 {

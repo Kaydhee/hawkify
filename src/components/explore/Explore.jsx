@@ -8,7 +8,7 @@ function Explore() {
 	return (
 		<section className='explore'>
 			<section className='explore_container'>
-				<section className='collections_heading heading'>
+				<section className='explore_heading heading'>
 					<h2>explore our nft tools</h2>
 					<p>we help you become the best version of the degen you want to be</p>
 				</section>

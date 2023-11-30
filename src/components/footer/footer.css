@@ -1,0 +1,144 @@
+.footer {
+	width: 100%;
+	background-color: #002345;
+}
+
+.footer_logo {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+	color: var(--white-color);
+}
+
+.footer_container {
+	width: 80%;
+	margin: 0% auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 4% 0;
+	color: var(--white-color);
+}
+
+.footer_top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.footer_left p {
+	width: 13.6875rem;
+	font-size: 1rem;
+	margin: 1rem 0;
+}
+
+.contact_links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.875rem;
+	color: var(--placeholder-color);
+}
+
+.footer_middle {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 4rem;
+}
+
+.footer_links h4,
+.footer_links li {
+	margin-bottom: 1rem;
+	font-size: 1.125rem;
+	transition: 500ms ease;
+}
+
+.footer_links li:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.footer_right h2 {
+	font-size: 1.72rem;
+	text-align: right;
+	margin-bottom: 1rem;
+}
+
+.footer_form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--variant-color-2);
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+.footer_form input {
+	background: var(--variant-color-2);
+	color: var(--white-color);
+}
+
+.footer_form input::placeholder {
+	color: var(--placeholder-color);
+}
+
+.footer_right p {
+	text-align: right;
+	font-weight: 400;
+	font-size: 0.825rem;
+	margin-bottom: 0.5rem;
+}
+
+.footer_bottom h1 {
+	color: var(--variant-color);
+	font-size: 18.75rem;
+	font-weight: 700;
+	letter-spacing: 0.7rem;
+	text-align: start;
+	width: 100%;
+}
+
+/* Resonsiveness (Tablets) */
+@media (max-width: 1024px) {
+	.footer_middle {
+		gap: 2rem;
+	}
+
+	.footer_bottom h1 {
+		font-size: 9.45rem;
+		letter-spacing: 0.5rem;
+	}
+}
+
+/* Resonsiveness (Phones) */
+@media (max-width: 524px) {
+	.footer_container {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.footer_top {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.footer_middle {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.footer_right p {
+		text-align: left;
+	}
+
+	.footer_bottom h1 {
+		font-size: 4.725rem;
+		letter-spacing: 0.1rem;
+		text-align: right;
+	}
+}

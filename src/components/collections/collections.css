@@ -1,7 +1,6 @@
 .collections {
 	width: 80%;
-	/* height: 100vh; */
-	margin: 2% auto;
+	margin: 3% auto;
 }
 
 .collections_container {
@@ -117,7 +116,7 @@
 	}
 
 	.collections_heading p {
-		font-size: 0.675rem;
+		font-size: 0.7rem;
 	}
 
 	.heading_info {
@@ -128,7 +127,7 @@
 	.heading_info h4,
 	.heading_info span,
 	.heading_info p {
-		font-size: 0.66rem;
+		font-size: 0.7rem;
 		gap: 0.1rem;
 	}
 
